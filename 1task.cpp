@@ -29,32 +29,32 @@ class ST
 			mainarray.pop();
 			while( !mainarray.empty() )
 			{
-			if( m <= mainarray.top() )
-			{
-			auxiliary.push( m );
-			m=mainarray.top();
-			mainarray.pop();
-			}
-			else
-			{
-			auxiliary.push( mainarray.top() );
-			mainarray.pop();
-			}
+				if( m <= mainarray.top() )
+				{
+					auxiliary.push( m );
+					m=mainarray.top();
+					mainarray.pop();
+				}
+				else
+				{
+					auxiliary.push( mainarray.top() );
+					mainarray.pop();
+				}
 			}
 			mainarray.push( m );
 			while( !auxiliary.empty() )
 			{
-			mainarray.push( auxiliary.top() );
-			auxiliary.pop();
+				mainarray.push( auxiliary.top() );
+				auxiliary.pop();
 			}
 		}
 		while( !mainarray.empty() ) 
 		{
-		cout << mainarray.top() << " ";
-		mainarray.pop();
+			cout << mainarray.top() << " ";
+			mainarray.pop();
 		}
 	};
-	};
+};
 int main()
 {
 	setlocale( LC_ALL, "Russian" );
@@ -64,15 +64,15 @@ int main()
 	cin >> x;
 	if(x <= 0)
 	{
-	cout << "х должен быть положительным числом! " << endl;
+		cout << "х должен быть положительным числом! " << endl;
 	}
 	else
 	{
-	cout << endl;
-	cout << "Начальный массив: " << endl;
-	obj.set(x);
-	cout << "Массив после сортировки: " << endl;
-	obj.sort(x);
+		cout << endl;
+		cout << "Начальный массив: " << endl;
+		obj.set(x);
+		cout << "Массив после сортировки: " << endl;
+		obj.sort(x);
 	}
 	getch();
 	return 0;
