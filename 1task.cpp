@@ -55,8 +55,8 @@ class ST
 		}
 	};
 	};
-	int main()
-	{
+int main()
+{
 	setlocale( LC_ALL, "Russian" );
 	ST obj;
 	cout << "Введите значение х (количество элементов в первом массиве): " << endl;
@@ -77,4 +77,4 @@ class ST
 	getch();
 	return 0;
 	
-	}
+}
