@@ -54,10 +54,10 @@ size++;
 void Print ()
 { Node *p = Head;
 while (p != NULL)
-{ cout « p->x « ' ';
+{ cout << p->x << ' ';
 p = p->Next;
 }
-cout « endl;
+cout << endl;
 }
 };
 
@@ -66,18 +66,18 @@ int main()
 setlocale(LC_ALL, "RUSSIAN");
 int a, pos;
 int counter=0;
-cout«"Введите  10 символов, нажмите enter: \n";
+cout<<"Введите  10 символов, нажмите enter: \n";
 for(int j=0; j<10; j++)
 {
-cin»a;
+cin>>a;
 lst.PushBack(a);
 counter++;
 }
 pos=(counter/2)+1;
 
 lst.Print();
-cout « "Введите символ который надо встаить:\n";
-cin » a;
+cout << "Введите символ который надо встаить:\n";
+cin >> a;
 
 lst.Insert(a, pos);
 lst.Print();
